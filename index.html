@@ -13,9 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 </head>
-
-<body class="bg-neutral-900 h-screen flex flex-col overflow-hidden font-[Roboto]" >
-    <header class="w-full h-20 flex items-center justify-between px-8 py-10 z-3">
+<body class="bg-neutral-900 h-screen flex flex-col overflow-hidden font-[Roboto]">
+    <header class="absolute w-full h-20 flex items-center justify-between px-8 py-10 z-2">
       <!-- Brilho -->
       <img class="absolute top-0 left-0 w-547 h-547" src="img/brilho.png" alt="">
         <!-- Logo -->
@@ -50,12 +49,13 @@
                 Tempor, faucibus sed massa neque id in quam. Amet feugiat
                 quam ut scelerisque nec imperdiet nisl leo. </p>
         </div>
-        
-        <!-- Câmera -->
-         <div class="flex items-center">
-            <img class="absolute h-screen w-170 left-[45%] z-2" src="img/listra.png" alt="">
+        <!-- Listra -->
+<img class="absolute h-screen w-170 left-[40%] z-2" src="img/listra.png" alt="">
+        <!--Câmera Main-->
+        <img class="absolute left-[45%] h-5/6 z-2" src="/img/cameramain.svg" alt="">
+        <!-- Texto do Fundo -->
+        <div>
             <h2 class="text-neutral-50 text-[16rem] absolute whitespace-nowrap opacity-20 top-50 left-100 font-[preconnect] font-bold">CAMERA EVO 4.0</h2>
-            <img class="absolute left-[48%] h-200% z-2" src="/img/cameramain.svg" alt="">
          </div>
         <!-- Botão de Compra -->
          <div class="flex flex-row px-30 gap-3 z-2">
@@ -68,7 +68,7 @@
         </div>
         <!-- Câmeras alheias -->
         <div class="flex justify-end gap-10 z-2 pr-[5%]">
-          <div class="bg-neutral-800 h-24 w-24 flex justify-center items-center border-transparent hover:border-yellow-400 transition-all duration-300">
+          <div class="bg-neutral-800 h-24 w-24 flex justify-center items-center border-transparent">
             <img src="img/cam1.png" alt="">
           </div>
           <div class="bg-neutral-800 h-24 w-24 flex justify-center items-center">
@@ -80,4 +80,5 @@
         </div>
     </main>
 </body>
+
 </html>
