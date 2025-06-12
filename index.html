@@ -15,18 +15,21 @@
 </head>
 <body class="bg-neutral-900 h-screen flex flex-col overflow-hidden font-[Roboto]">
   
-  <img class="absolute h-screen w-170 left-[40%] z-2" src="img/listra.png" alt="">
-    <header class="absolute w-full h-20 flex items-center justify-between px-8 py-10 z-2">
+    <!-- Listra -->
+    <img class="absolute h-[100%] w-170 left-[47%] z-2 max-md:hidden" src="img/listra.png" alt="">
+    <img class="hidden max-md:absolute" src="img/listrah.png" alt="">
+    <header class="absolute w-full h-20 flex items-center justify-between px-8 py-10 z-2 max-md:px-4 max-md:gap-2 max-md:h-20" >
       <!-- Brilho -->
       <img class="absolute top-0 left-0 w-547 h-547" src="img/brilho.png" alt="">
         <!-- Logo -->
-        <div class="flex items-center">
+        <div class="flex items-center max-md:h-8">
           <img src="/img/logo.png" alt="Camera Store" class="h-10">
        
         </div>
       
         <!-- Menu -->
-        <menu class="flex gap-8 text-white text-sm font text-[0.93rem] list-none">
+        <menu class="flex gap-8 text-white text-sm font text-[0.93rem] list-none max-md:gap-4 max-md:text-[0.75rem]">
+        
           <li><a href="#">About</a></li>
           <li><a href="#">Product</a></li>
           <li><a href="#">Store</a></li>
@@ -34,51 +37,59 @@
         </menu>
       
         <!-- Ícones -->
-        <div class="flex gap-5">
+        <div class="flex gap-5 max-md:gap-3">
           <img src="img/lupa.svg" alt="Search" class="h-5">
           <img src="img/carrinho.svg" alt="Cart" class="h-5">
         </div>
       </header>
       
     <!-- Main -->
-    <main class="flex-grow grid grid-cols-2 md:grid-cols-1 py-30">
-        <!-- textos -->
-        <div class="text-red-50 flex justify-center flex-col px-30 z-1">
-        <h2 class="font-bold text-[1.125]">PROFESSIONAL SERIES</h2>
-        <h1 class="font-bold text-[5.93rem] font-[preconnect]">CAMERA <br>EVO <span class=" text-amber-500">4.0</span></h2>
-            <p class=" text-red-50 text-[0.93rem] w-[25rem] z-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sapien cursus integer diam varius ac pellentesque est neque. 
-                Tempor, faucibus sed massa neque id in quam. Amet feugiat
-                quam ut scelerisque nec imperdiet nisl leo. </p>
+    <main class="flex-grow py-30 max-md:py-5">
+      <!-- Container -->
+      <div class="grid grid-cols-12 md:grid-cols-1 max-md:grid-cols-[1fr] ">
+        <!-- Lado Esquerdo -->
+        <div class="text-red-50 flex justify-center flex-col px-30 z-1 col-span-7 max-md:col-span-1 pt-30">
+          <!-- textos -->
+          <h2 class="font-bold text-[1.125rem]">PROFESSIONAL SERIES</h2>
+          <h1 class="font-bold text-[5.93rem] font-[preconnect] max-md:text-center">
+            CAMERA <br />EVO <span class="text-amber-500">4.0</span>
+          </h1>
+          <p class="text-red-50 text-[0.93rem] max-md:text-center max-md:w-12/12">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien cursus integer diam varius ac pellentesque est neque. Tempor, faucibus sed massa neque id in quam. Amet feugiat quam ut scelerisque nec imperdiet nisl leo.
+          </p>
         </div>
-      
-        <!--Câmera Main-->
-          <img class="absolute left-[42%] h-5/6 z-2" src="/img/cameramain.svg" alt="">
+
+        <!-- Câmera Main -->
+        <img class="absolute left-[42%] col-start-8 col-end-11 h-5/6 z-2 max-md:left-[0%] max-md:top-[25%]" src="/img/cameramain.svg" alt="" />
+
+        <!-- Botão de Compra -->
+        <div class="flex flex-row px-30 gap-3 z-2 col-span-12 p-10 justify-center">
+          <div class="skew-x-[-20deg] bg-yellow-500 flex items-center justify-center whitespace-nowrap h-15 w-50">
+            <p class="text-[1.125rem] text-black font-bold">Buy now $120</p>
+          </div>
+          <div class="skew-x-[-20deg] bg-yellow-600 flex justify-center items-center h-15 w-20 max-md:justify-center">
+            <img class="w-8 h-6" src="img/seta-direita.png" alt="" />
+          </div>
+        </div>
+
         <!-- Texto do Fundo -->
         <div>
-            <h2 class="text-neutral-50 text-[16rem] absolute whitespace-nowrap opacity-20 top-50 left-100 font-[preconnect] font-bold">CAMERA EVO 4.0</h2>
-         </div>
-        <!-- Botão de Compra -->
-         <div class="flex flex-row px-30 py-10 gap-3 z-2">
-            <div class="skew-x-[-20deg]  bg-yellow-500 flex items-center justify-center whitespace-nowrap col-span-3 h-15 w-50">
-                <p class="text-[1.125rem] font-bold">Buy now  $120</p>
-            </div>
-            <div class="skew-x-[-20deg] bg-yellow-600 col-span-1 flex justify-center items-center h-15 w-20">
-                <img class="w-8 h-6" src="img/seta-direita.png" alt="">
-            </div>
+          <h2 class="text-neutral-50 text-[16rem] absolute whitespace-nowrap opacity-20 top-50 left-100 font-[preconnect] font-bold col-start-10 col-end-12 max-md:hidden">CAMERA EVO 4.0</h2>
         </div>
+
         <!-- Câmeras alheias -->
-        <div class="flex justify-end gap-10 z-2 pr-[5%]">
+        <div class="flex justify-center gap-10 py-30 z-2 pr-[10%] col-span-12">
           <div class="bg-neutral-800 h-24 w-24 flex justify-center items-center hover:border-2 border-yellow-500 transition-all duration-100">
-            <img src="img/cam1.png" alt="">
+            <img src="img/cam1.png" alt="" />
           </div>
           <div class="bg-neutral-800 h-24 w-24 flex justify-center items-center hover:border-2 border-yellow-500 transition-all duration-100">
-            <img src="img/cam2.png" alt="">
+            <img src="img/cam2.png" alt="" />
           </div>
           <div class="bg-neutral-800 h-24 w-24 flex justify-center items-center hover:border-2 border-yellow-500 transition-all duration-100">
-            <img src="img/cam3.png" alt="">
+            <img src="img/cam3.png" alt="" />
           </div>
         </div>
+      </div>
     </main>
 </body>
 
