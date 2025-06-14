@@ -12,87 +12,91 @@
     <title>Camera Evo 4.0</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-<body class="bg-neutral-900 h-screen w-screen flex flex-col overflow-x-hidden overflow-y-scroll  font-[Roboto]">
-  
-    <!-- Listra -->
-    <img class="absolute h-[100%] w-170 left-[47%] z-2 max-lg:hidden" src="img/listra.png" alt="">
-    <header class="absolute w-full h-20 flex items-center justify-between px-8 py-10 z-2 max-lg:px-5 max-lg:gap-2 max-lg:h-20 max-lg:pr-4" >
+<body class="bg-neutral-900 min-h-screen w-screen flex flex-col overflow-x-hidden overflow-y-scroll  font-[Roboto]">
+  <div class="relative w-full h-full">
+      <!-- Listra -->
+      <img class="absolute h-[100%] w-170 left-[47%] z-2 max-lg:hidden" src="img/listra.png" alt="">
+      <img class="hidden max-lg:block top-[40%] max-lg:absolute max-lg:w-full max-md:top-[47%]" src="img/listrah.png" alt="">
+
       <!-- Brilho -->
-      <img class="absolute top-0 left-0 w-547 h-547" src="img/brilho.png" alt="">
-        <!-- Logo -->
-        <div class="flex items-center max-lg:h-8">
-          <img src="/img/logo.png" alt="Camera Store" class="h-10">
-       
-        </div>
-      
-        <!-- Menu -->
-        <menu class="flex gap-8 text-white text-sm font text-[0.93rem] list-none max-lg:gap-4 max-lg:text-[0.75rem]">
+        <img class="absolute top-0 left-0 w-547 h-full" src="img/brilho.png" alt="">
+
+      <!-- Header -->
+      <header class="absolute w-full h-20 flex items-center justify-between px-8 py-10 z-2 max-lg:px-5 max-md:text-3rem max-lg:gap-2 max-lg:h-20 max-lg:pr-4 max-md:items-start max-md:gap-4" >
+          <!-- Logo -->
+          <div class="flex items-center max-lg:h-8">
+            <img src="img/logo.png" alt="Camera Store" class="h-10">
         
-          <li><a href="#">About</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Store</a></li>
-          <li><a href="#">Contact</a></li>
-        </menu>
-      
-        <!-- Ícones -->
-        <div class="flex gap-5 max-lg:gap-3">
-          <img src="img/lupa.svg" alt="Search" class="h-5">
-          <img src="img/carrinho.svg" alt="Cart" class="h-5">
-        </div>
-      </header>
-      
-    <!-- Main -->
-    <main class="flex-grow py-30 max-lg:py-5 max-lg:items-center max-lg:justify-center">
-      <!-- Container -->
-      <div class="grid grid-cols-12 lg:grid-cols-1 max-lg:grid-cols-[1fr] max-lg:flex max-lg:flex-col max-lg:items-center">
-        <!-- Lado Esquerdo -->
-        <div class="text-red-50 flex justify-center flex-col px-[7.5rem] max-lg:px-4 z-1 col-span-7 max-lg:col-span-1 pt-30 max-lg:items-center">
-          <!-- textos -->
-          <h2 class="font-bold text-[1.125rem] max-md:items-start">PROFESSIONAL SERIES</h2>
-          <h1 class="font-bold text-[5.93rem] font-[preconnect] max-lg:text-center max-lg:w-full ">
-            CAMERA <br />EVO <span class="text-amber-500">4.0</span>
-          </h1>
-          <p class="text-red-50 text-[0.93rem] w-5/12 max-lg:w-130 max-lg:text-center max-md:hidden">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien cursus integer diam varius ac pellentesque est neque. Tempor, faucibus sed massa neque id in quam. Amet feugiat quam ut scelerisque nec imperdiet nisl leo.
-          </p>
-        </div>
-
-        <!-- Câmera Main -->
-        <div class="flex max-md:items-center max-lg:justify-center">
-          <img class="absolute left-[42%] h-5/6 z-2  max-lg:hidden" src="/img/cameramain.svg" alt="" />
-        <!-- Tablet e Celular-->
-          <img class="hidden max-lg:block max-lg:relative max-lg:w-12/12 max-lg:my-4 z-20" src="img/cameramain2.png" alt="">
-          <img class="hidden max-lg:block top-[40%] max-lg:absolute max-lg:w-full max-md:top-[40%]" src="img/listrah.png" alt="">
-        </div>
-
-
-        <!-- Botão de Compra -->
-        <div class="flex flex-row px-30 gap-3 z-2 col-span-12 pt-10 max-lg:justify-center max-lg:p-0 max-lg:px-0 max-md:[pt-0]">
-          <div class="skew-x-[-20deg] bg-yellow-500 flex items-center justify-center whitespace-nowrap h-15 w-50">
-            <p class="text-[1.125rem] text-black font-bold">Buy now $120</p>
           </div>
-          <div class="skew-x-[-20deg] bg-yellow-600 flex justify-center items-center h-15 w-20 max-lg:justify-center">
-            <img class="w-8 h-6" src="img/seta-direita.png" alt="" />
+        
+          <!-- Menu -->
+          <menu class="flex gap-8 text-white text-sm font text-[1rem] list-none max-lg:gap-4 max-lg:text-[0.75rem] max-md: max-md:items-start max-md:gap-2">
+          
+            <li><a href="#">About</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Contact</a></li>
+          </menu>
+        
+          <!-- Ícones -->
+          <div class="flex gap-5 max-lg:gap-3">
+            <img src="img/lupa.svg" alt="Search" class="h-5">
+            <img src="img/carrinho.svg" alt="Cart" class="h-5">
           </div>
-        </div>
+        </header>
+        
+      <!-- Main -->
+      <main class="flex-grow py-30 max-lg:py-5 max-lg:items-center max-lg:justify-center max-md:overflow-x-hidden">
+        <!-- Container -->
+        <div class=" grid grid-cols-12 lg:grid-cols-1 max-lg:grid-cols-[1fr] max-lg:flex max-lg:flex-col max-lg:items-center">
+          <!-- Lado Esquerdo -->
+          <div class="text-red-50 flex justify-center flex-col px-[7.5rem] max-lg:px-4 z-1 col-span-7 max-lg:col-span-1 pt-30 max-lg:items-center">
+            <!-- textos -->
+            <h2 class="font-bold text-[1.125rem] max-md:items-start">PROFESSIONAL SERIES</h2>
+            <h1 class="font-bold text-[5.93rem] font-[preconnect] max-lg:text-center max-lg:w-full ">
+              CAMERA <br />EVO <span class="text-amber-500">4.0</span>
+            </h1>
+            <p class="text-red-50 text-[0.93rem] w-5/12 max-lg:w-130 max-lg:text-center max-md:hidden">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien cursus integer diam varius ac pellentesque est neque. Tempor, faucibus sed massa neque id in quam. Amet feugiat quam ut scelerisque nec imperdiet nisl leo.
+            </p>
+          </div>
 
-        <div>
-          <h2 class="text-neutral-50 text-[16rem] absolute whitespace-nowrap opacity-20 top-50 left-100 font-[preconnect] font-bold col-start-10 col-end-12 max-lg:hidden">CAMERA EVO 4.0</h2>
-        </div>
+          <!-- Câmera Main -->
+          <div class="flex max-md:items-center max-lg:justify-center">
+            <img class="absolute left-[42%] h-5/6 z-2  max-lg:hidden" src="/img/cameramain.svg" alt="" />
+          <!-- Tablet e Celular-->
+            <img class="hidden max-lg:block max-lg:relative max-lg:w-12/12 max-lg:my-4 z-20" src="img/cameramain.svg" alt="">
+          </div>
 
-        <!-- Câmeras alheias -->
-        <div class="flex justify-end gap-10 px-10 py-6 z-2 col-span-12 max-lg:justify-center max-lg:w-fit h-fit">
-          <div class="bg-neutral-800 h-24 w-24 flex justify-center items-center hover:border-2  border-yellow-500 transition-all duration-100">
-            <img src="img/cam1.png" alt="" />
+
+          <!-- Botão de Compra -->
+          <div class="flex flex-row px-30 gap-3 z-2 col-span-12 pt-10 max-lg:justify-center max-lg:p-0 max-lg:px-0 max-md:[pt-0]">
+            <div class="skew-x-[-20deg] bg-yellow-500 flex items-center justify-center whitespace-nowrap h-15 w-50">
+              <p class="text-[1.125rem] text-black font-bold">Buy now $120</p>
+            </div>
+            <div class="skew-x-[-20deg] bg-yellow-600 flex justify-center items-center h-15 w-20 max-lg:justify-center">
+              <img class="w-8 h-6" src="img/seta-direita.png" alt="" />
+            </div>
           </div>
-          <div class="bg-neutral-800 h-24 w-24 flex justify-center items-center hover:border-2 border-yellow-500 transition-all duration-100">
-            <img src="img/cam2.png" alt="" />
-          </div>
-          <div class="bg-neutral-800 h-24 w-24 flex justify-center items-center hover:border-2 border-yellow-500 transition-all duration-100">
-            <img src="img/cam3.png" alt="">
+
+
+            <h2 class="text-neutral-50 text-[16rem] absolute whitespace-nowrap opacity-20 top-50 left-100 font-[preconnect] font-bold col-start-10 col-end-12 max-lg:hidden">CAMERA EVO 4.0</h2>
+
+
+          <!-- Câmeras alheias -->
+          <div class="flex justify-end gap-10 px-10 py-30 z-2 col-span-12 max-lg:py-8 max-lg:justify-center max-lg:w-fit h-fit">
+            <div class="bg-neutral-800 h-24 w-24 flex justify-center items-center hover:border-2  border-yellow-500 transition-all duration-100">
+              <img src="img/cam1.png" alt="" />
+            </div>
+            <div class="bg-neutral-800 h-24 w-24 flex justify-center items-center hover:border-2 border-yellow-500 transition-all duration-100">
+              <img src="img/cam2.png" alt="" />
+            </div>
+            <div class="bg-neutral-800 h-24 w-24 flex justify-center items-center hover:border-2 border-yellow-500 transition-all duration-100">
+              <img src="img/cam3.png" alt="">
+            </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
+  </div>
 </body>
 </html>
