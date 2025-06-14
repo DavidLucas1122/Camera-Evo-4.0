@@ -12,7 +12,7 @@
     <title>Camera Evo 4.0</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-<body class="bg-neutral-900 h-screen w-screen flex flex-col overflow-x-hidden font-[Roboto]">
+<body class="bg-neutral-900 h-screen w-screen flex flex-col overflow-x-hidden overflow-y-scroll  font-[Roboto]">
   
     <!-- Listra -->
     <img class="absolute h-[100%] w-170 left-[47%] z-2 max-lg:hidden" src="img/listra.png" alt="">
@@ -48,11 +48,11 @@
         <!-- Lado Esquerdo -->
         <div class="text-red-50 flex justify-center flex-col px-[7.5rem] max-lg:px-4 z-1 col-span-7 max-lg:col-span-1 pt-30 max-lg:items-center">
           <!-- textos -->
-          <h2 class="font-bold text-[1.125rem]">PROFESSIONAL SERIES</h2>
-          <h1 class="font-bold text-[5.93rem] font-[preconnect] max-lg:text-center max-lg:w-full">
+          <h2 class="font-bold text-[1.125rem] max-md:items-start">PROFESSIONAL SERIES</h2>
+          <h1 class="font-bold text-[5.93rem] font-[preconnect] max-lg:text-center max-lg:w-full ">
             CAMERA <br />EVO <span class="text-amber-500">4.0</span>
           </h1>
-          <p class="text-red-50 text-[0.93rem] w-5/12 max-lg:w-130 max-lg:text-center">
+          <p class="text-red-50 text-[0.93rem] w-5/12 max-lg:w-130 max-lg:text-center max-md:hidden">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien cursus integer diam varius ac pellentesque est neque. Tempor, faucibus sed massa neque id in quam. Amet feugiat quam ut scelerisque nec imperdiet nisl leo.
           </p>
         </div>
@@ -60,14 +60,14 @@
         <!-- Câmera Main -->
         <div class="flex max-md:items-center max-lg:justify-center">
           <img class="absolute left-[42%] h-5/6 z-2  max-lg:hidden" src="/img/cameramain.svg" alt="" />
-        <!-- Tablet -->
+        <!-- Tablet e Celular-->
           <img class="hidden max-lg:block max-lg:relative max-lg:w-12/12 max-lg:my-4 z-20" src="img/cameramain2.png" alt="">
-          <img class="hidden max-lg:block top-[60%] max-lg:absolute max-lg:w-full" src="img/listrah.png" alt="">
+          <img class="hidden max-lg:block top-[40%] max-lg:absolute max-lg:w-full max-md:top-[40%]" src="img/listrah.png" alt="">
         </div>
 
 
         <!-- Botão de Compra -->
-        <div class="flex flex-row px-30 gap-3 z-2 col-span-12 pt-10 max-lg:justify-center max-lg:p-0 max-lg:px-0">
+        <div class="flex flex-row px-30 gap-3 z-2 col-span-12 pt-10 max-lg:justify-center max-lg:p-0 max-lg:px-0 max-md:[pt-0]">
           <div class="skew-x-[-20deg] bg-yellow-500 flex items-center justify-center whitespace-nowrap h-15 w-50">
             <p class="text-[1.125rem] text-black font-bold">Buy now $120</p>
           </div>
