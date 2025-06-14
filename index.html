@@ -13,11 +13,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 </head>
-<body class="bg-neutral-900 h-screen flex flex-col overflow-hidden font-[Roboto]">
+<body class="bg-neutral-900 h-screen flex flex-col overflow-x-hidden font-[Roboto]">
   
     <!-- Listra -->
     <img class="absolute h-[100%] w-170 left-[47%] z-2 max-md:hidden" src="img/listra.png" alt="">
-    <img class="hidden max-md:block max-md:absolute top-[40%] max-md:w-screen " src="img/listrah.png" alt="">
+    <img class="hidden max-md:block max-md:absolute top-[57%] max-md:w-screen " src="img/listrah.png" alt="">
     <header class="absolute w-full h-20 flex items-center justify-between px-8 py-10 z-2 max-md:px-4 max-md:gap-2 max-md:h-20" >
       <!-- Brilho -->
       <img class="absolute top-0 left-0 w-547 h-547" src="img/brilho.png" alt="">
@@ -44,14 +44,14 @@
       </header>
       
     <!-- Main -->
-    <main class="flex-grow py-30 max-md:py-5">
+    <main class="flex-grow py-30 max-md:py-5 max-md:items-center max-md:justify-center">
       <!-- Container -->
-      <div class="grid grid-cols-12 md:grid-cols-1 max-md:grid-cols-[1fr] ">
+      <div class="grid grid-cols-12 md:grid-cols-1 max-md:grid-cols-[1fr] max-md:flex max-md:flex-col max-md:items-center">
         <!-- Lado Esquerdo -->
         <div class="text-red-50 flex justify-center flex-col px-30 z-1 col-span-7 max-md:col-span-1 pt-30 max-md:items-center">
           <!-- textos -->
           <h2 class="font-bold text-[1.125rem]">PROFESSIONAL SERIES</h2>
-          <h1 class="font-bold text-[5.93rem] font-[preconnect] max-md:text-center max-md:p-0">
+          <h1 class="font-bold text-[5.93rem] font-[preconnect] max-md:text-center max-md:w-full">
             CAMERA <br />EVO <span class="text-amber-500">4.0</span>
           </h1>
           <p class="text-red-50 text-[0.93rem] w-5/12 max-md:text-center max-md:w-full max-md:">
@@ -60,10 +60,12 @@
         </div>
 
         <!-- Câmera Main -->
-        <img class="absolute left-[42%] col-start-8 col-end-11 h-5/6 z-2   max-md:absolute max-md:left-[12%] max-md:top-[38%] max-md:h-3/6" src="/img/cameramain.svg" alt="" />
-
+        <div class="flex max-md:items-center max-md:justify-center">
+        <img class="absolute left-[42%] h-5/6 z-2  max-md:hidden" src="/img/cameramain.svg" alt="" />
+        <img class="hidden max-md:block max-md:relative max-md:w-10/12 max-md:h-[25%] max-md:my-10" src="img/cameramain2.svg" alt="">
+        </div>
         <!-- Botão de Compra -->
-        <div class="flex flex-row px-30 gap-3 z-2 col-span-12 p-10 max-md:justify-center max-md:px-0">
+        <div class="flex flex-row px-30 gap-3 z-2 col-span-12 pt-10 max-md:justify-center max-md:p-0 max-md:px-0">
           <div class="skew-x-[-20deg] bg-yellow-500 flex items-center justify-center whitespace-nowrap h-15 w-50">
             <p class="text-[1.125rem] text-black font-bold">Buy now $120</p>
           </div>
@@ -78,7 +80,7 @@
         </div>
 
         <!-- Câmeras alheias -->
-        <div class="flex justify-end gap-10 py-30 z-2 pr-[10%] col-span-12 max-md:justify-center max-md:px-0 max-md:py-90">
+        <div class="flex justify-end gap-10 py-30 z-2 col-span-12 max-md max-md:justify-center max-md:px-0">
           <div class="bg-neutral-800 h-24 w-24 flex justify-center items-center hover:border-2 border-yellow-500 transition-all duration-100">
             <img src="img/cam1.png" alt="" />
           </div>
